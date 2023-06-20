@@ -1,0 +1,25 @@
+<html>
+    <head>
+    <style>
+body{
+         background-image:url(https://img.freepik.com/free-photo/green-park-view_1417-1492.jpg;)
+         
+         h1{
+                colour:red (38,40.286)
+                text text-align: <center>
+                }
+                p{
+                    font-family:Verdana, Geneva, Tahoma, sans-serif ; 
+                    font-size:90px ;  
+                    font-weight: 300
+                }
+                </style>
+                </head>
+                <h1> iam a software engineer</h1>
+                <p>i am a kottesh</p>
+                </html>
+            
+                
+
+
+
