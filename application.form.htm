@@ -1,19 +1,32 @@
 <html>
+<Head>
+  <link rel="stylesheet" href="tryit.css">
+</Head>
 <style>
     body{
         font-family:inherit; 
-        background-color: springgreen;
+        background-image: url("https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2655.jpg?w=2000");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
         font-size: xx-large ;
-
     }
+    
+      h1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    color:red;
+    background-color: blue;
+ 
+  
+}
     </style>
      <body>
-        <center>
-            <img src="images\form_icon.jpg"
+        
+         <center>   <img src="images\form_icon.jpg"></center>
 
-    <center><h1>APPLICATION FORM</h1></center>
+   <h1 style="text-align: center;">APPLICATION FORM</h1>
     <form action="/action_page.php">
-        <fieldset>
+             <fieldset style="width: 50%;">
           <legend>Personalia details:</legend>
         
             <label for="fname">First name: </label>
@@ -48,6 +61,7 @@
                   <option value="bsc">bsc</option>
                   <option value="bca">bca</option>
                 </select><br><br>
+
                 
                 <label for="fname">address: </label>
                 <input type="text" id="fname" name="fname"><br><br>
@@ -55,53 +69,47 @@
             </form>
                
                 <form action="/action_page.php">
-                    <fieldset>
+                    <fieldset style="width: 50%;">
                       <legend>general details:</legend>
                       <label for="fname">universiy: </label>
                       <input type="text" id="fname" name="fname"><br><br>
                       <label for="cars">salary expert:</label>
                       <input type="text" id="fname" name="fname"><br><br>
+                      <label for="text">state</label>:</label>
+                      <select id="text"  name="text" size="1"  > 
+                        <option value="tamil nadu">tamil nadu</option> 
+
+
+                                          
                      
-                      <label for="cars">state</label>:</label>
-                      <select id="cars"  name="cars" size="1"  > 
-                        <option value="tamil nadu">tamil nadu</option>
+                        
                        
                       </fieldset>
                     </form>
                       <form action="/action_page.php">
-                        <fieldset>
+                        <fieldset style="width: 50%;">
                             <legend>general details:</legend>
                             <label for="fname">universiy: </label>
                           <input type="text" id="fname" name="fname"><br><br>
                           <label for="cars">salary expert:</label>
                           <input type="text" id="fname" name="fname"><br><br>
-                          <input type="image"  src="images\submit_gif.gif"  alt="Submit" width="48" height="48">
-                          <input type="submit">
+                          <input type="image"  src="images\submit_gif.gif"  alt="Submit" width="90" height="90">
+                          <input   type="submit">
+                          <li><a href="/my_profile.html" target="_blank">css</a></li>
                          </fieldset>
-                         </form>
+                         </form> 
 
                          
-                        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          </fieldset>
-            </form>
-
-
+                                <form action="/action_page.php">
+                                  <textarea name="message" rows="10" cols="90">your feedback.</textarea>
+                                  <br><br>
+                                  <input type="submit">
+                                </form>
+                          
+                         </fieldset>
+                         </form>
+                         </body>
+                         </html>
 
 
 
