@@ -7,21 +7,15 @@
     <link rel="stylesheet" href="calculator.css">
 </head>
 <body>
-          <p id="demo"></p>
-        <button id="demo1" ></button>
-
-
     <h1>BMI Calculator</h1>
     <form id="bmiForm">
         <label for="weight">WEIGHT(KG):</label><br>
-        <input type="text" id="weight" value=""><br><br>
-
-        <label for="height">HEIGHT(M):</label><br>
-        <input type="text" id="height" value=""><br><br>
-
+        <input type="text" id="weight" placeholder="enter your weight" required>
+        <label for="height">HEIGHT(CM):</label>
+        <input type="text" id="height" placeholder="enter your height" required>
         <input type="button" value="Calculate BMI" onclick="calculateBMI()">
+        <p id="demo"></p>
     </form>
-
     <script>
         function calculateBMI() {
             const weight = parseFloat(document.getElementById('weight').value);
@@ -31,10 +25,8 @@
                 alert("Please enter valid weight and height values.");
                 return;
             }
-
             const userBMI = bmi_calc(weight, height);
             let resultMessage;
-
             if (userBMI <= 18.0) {
                 resultMessage = `Your BMI is ${userBMI}. You are underweight. 😒😒😢`;
             } else if (userBMI <= 25.0) {
@@ -44,11 +36,8 @@
             } else {
                 resultMessage = `Your BMI is ${userBMI}. You are in obesity range. 😱`;
             }
-
             document.getElementById('demo').innerHTML = resultMessage;
-            document.getElementById('demo1').innerHTML = resultMessage;       
         }
-
         function bmi_calc(weight, height) {
             return weight / height ** 2;
         }
