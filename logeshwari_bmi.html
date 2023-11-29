@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,
+        form {
+            background-image: url("https://png.pngtree.com/thumb_back/fh260/back_pic/02/66/97/15578bade17dcc3.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        input[type=text],
+        select {
+            display: inline;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 12px 20px;
+            margin: 8px;
+            display: inline-block;
+            border: 3px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 50%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>*/
+</head>
+
+<body>
+    <form id="bmiForm">
+        <form id="bmiForm">
+            <label for="weight">WEIGHT(KG):</label><br>
+            <input type="text" id="weight" placeholder="enter your weight" required>
+            <label for="height">HEIGHT(CM):</label><br>
+            <input type="text" id="height" placeholder="enter your height" required>
+            <input type="button" value="Calculate BMI" onclick="calculateBMI()">
+            
+        <!--<input type="submit" value="Submit">--> 
+        <p id="demo"></p>
+    </form>
+
+
+    <script>
+        function calculateBmi() {
+            const weight = parseFloat(document.getElementById('weight').value)
+            const height = parseFloat(document.getElementById('height').value)
+            if (isNaN(weight) || isNaN(height) || height <= 0) {
+                alert("Please enter valid weight and height values.");
+                return;
+            }
+            const userBMI = bmi_calc(weight, height);
+            let resultMessage;
+            if (user_bmi <= 18.0) {
+                resultMessage`your bmi is ${user_bmi}. you are in under weight`
+            } else if (user_bmi <= 25.0) {
+                resultMessage`your bmi is ${user_bmi}. you are in healthy weight`
+            } else if (user_bmi <= 30.0) {
+                resultMessage`your bmi is ${user_bmi}. you are in over weight `
+            }
+            else {
+                resultMessage =` Your BMI is ${userBMI} You are in obesity range. 😱`;
+            }   
+
+            document.getElementById('demo').innerHTML = resultMessage;
+        }
+        function bmi_calc(weight, height) {
+            return (weight / height ** 2) * 10000;
+        }
+    </script>
+
+</body>
+
+</html>
