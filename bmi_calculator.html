@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI Calculator</title>
+    <link rel="icon" type="image" href="data:image/png;base64,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">
     <link rel="stylesheet" href="calculator.css">
 </head>
 
@@ -12,12 +13,22 @@
     <h1>BMI Calculator</h1>
     <form id="bmiForm">
         <label for="weight">WEIGHT(KG):</label><br>
-        <input type="text" id="weight" placeholder="enter your weight" required>
+        <input type="number" id="weight" placeholder="enter your weight" required>
         <label for="height">HEIGHT(CM):</label>
-        <input type="text" id="height" placeholder="enter your height" required>
+        <input type="number" id="height" placeholder="enter your height" required>
         <input type="button" value="Calculate BMI" onclick="calculateBMI()">
-        <p id="demo"></p>
+        <div>
+            <button className="btn" type="btn btn-outline" type="submit">reload</button>
+        </div>
+        
+        <form action="/action_page.php">
+       <p id="demo"></p>
+    <div class="div1">
+        <p id ="demo1"></p>
+    </div>
     </form>
+    <img id="img1" src="">
+    <div className="center"></div>
     <script>
         function calculateBMI() {
             const weight = parseFloat(document.getElementById('weight').value);
@@ -31,18 +42,37 @@
             let resultMessage;
             if (userBMI <= 18.0) {
                 resultMessage = `Your BMI is ${userBMI}. You are underweight. 😒😒😢`;
+                
+                document.getElementById("img1").src ='images/underweight.gif'
+                document.getElementById("img1").style.width ="20%"
+                document.getElementById("img1").style.height ="20%"
+                // document.getElementById('img1').style.display = 'block'
             } else if (userBMI <= 25.0) {
                 resultMessage = `Your BMI is ${userBMI}. You are in a healthy weight. 🥳👌`;
+                document.getElementById("img1").src ='images/healthy.gif'
+                document.getElementById("img1").style.width ="20%"
+                document.getElementById("img1").style.height ="20%"
             } else if (userBMI <= 30.0) {
                 resultMessage = `Your BMI is ${userBMI}. You are overweight. 😧😨`;
+                document.getElementById("img1").src ='images/over_wight.gif'
+                document.getElementById("img1").style.width ="30%"
+                document.getElementById("img1").style.height ="30%"
             } else {
                 resultMessage = `Your BMI is ${userBMI}. You are in obesity range. 😱`;
+                document.getElementById("img1").src ='images/obesity.gif'
+                document.getElementById("img1").style.width ="20%"
+                document.getElementById("img1").style.height ="20%"
             }
-            document.getElementById('demo').innerHTML = resultMessage;
+ 
+            document.getElementById('demo1').innerHTML = resultMessage;
+
         }
         function bmi_calc(weight, height) {
             return (weight / height ** 2) * 10000;
         }
+
+
     </script>
+   
 </body>
 </html>
