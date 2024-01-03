@@ -1,345 +1,350 @@
 <html>
-    <body>
-      <nav>
-        <ul>
-          <li style="color: crimson;"><a href="www.amazon.com">home</a></li>
-          <li style="color: blue;"><a href="#">about</a></li>
-          <li style="color: chartreuse;"><a href="#">gmail</a></li>
-          <li style="color: chocolate;"><a href="#">color</a></li>
-          </ul>
-        </nav>
-        
-
-        <h1>Radio Buttons</h1>
-        
-        <p>Choose your favorite Web language:</p>
-        
-        <form>
-          <input type="radio" id="html" name="fav_language" value="HTML">
-          <label for="html">HTML</label><br>
-          <input type="radio" id="css" name="fav_language" value="CSS">
-          <label for="css">CSS</label><br>
-          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-          <label for="javascript">JavaScript</label>
-        <input type="radio" id="swift" name="fav_language" value="swift">
-          <label for="swift">swift</label><br>
-          <input type="radio" id="c++" name="fav_language" value="C++">
-          <label for="c++">C++</label><br>
-          <input type="radio" id="phython" name="fav_language" value="phython">
-          <label for="phython">phython</label>
-        <input type="radio" id="html" name="fav_language" value="html">
-          <label for="html">html</label><br>
-          <input type="radio" id="sql" name="fav_language" value="sql">
-          <label for="sql">sql</label>
-        <input type="radio" id="java" name="fav_language" value="java">
-          <label for="java">java</label><br>
-          <input type="radio" id="strap" name="fav_language" value="strap">
-          <label for="strap">sprap</label>
-
-<h1>check box</h1>
+<head>
+  
+</head>
+<body>
+  <nav>
+    <ul>
+      <li style="color: crimson;"><a href="www.amazon.com">home</a></li>
+      <li style="color: blue;"><a href="#">about</a></li>
+      <li style="color: chartreuse;"><a href="#">gmail</a></li>
+      <li style="color: chocolate;"><a href="#">color</a></li>
+    </ul>
+  </nav>
 
 
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-        <label for="vehicle1"> I have a bike</label><br>
-        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-        <label for="vehicle2"> I have a car</label><br>
-        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-        <label for="vehicle3"> I have a boat</label><br><br>
-        <input type="submit" value="Submit">
+  <h1>Radio Buttons</h1>
 
-<h1>text input</h1>
+  <p>Choose your favorite Web language:</p>
+
+  <form>
+      <input type="radio" id="html" name="fav_language" value="HTML">
+      <label for="html">HTML</label><br>
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="css">CSS</label><br>
+      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+      <label for="javascript">JavaScript</label>
+    <input type="radio" id="swift" name="fav_language" value="swift">
+      <label for="swift">swift</label><br>
+      <input type="radio" id="c++" name="fav_language" value="C++">
+      <label for="c++">C++</label><br>
+      <input type="radio" id="phython" name="fav_language" value="phython">
+      <label for="phython">phython</label>
+    <input type="radio" id="html" name="fav_language" value="html">
+      <label for="html">html</label><br>
+      <input type="radio" id="sql" name="fav_language" value="sql">
+      <label for="sql">sql</label>
+    <input type="radio" id="java" name="fav_language" value="java">
+      <label for="java">java</label><br>
+      <input type="radio" id="strap" name="fav_language" value="strap">
+      <label for="strap">sprap</label>
+
+    <h1>check box</h1>
 
 
- <label for="fname">First name:</label><br>
-  <input type="text" id="fname" value="kottesh"><br><br>
-  <label for="fname">second name:</label><br>
-   <input type="text" id="fname" value="surya"><br><br>
-  <input type="submit" value="Submit">
-</form> 
-
-<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
-
-<p>Notice that the value of the "First name" field will not be submitted, because the input element does not have a name attribute.</p>
-<h1>The select Element</h1>
-
-<p>The select element defines a drop-down list:</p>
-
-<form action="/action_page.php">
-  <label for="cars">Choose a car:</label>
-  <select id="cars" name="cars">
-    <option value="kottesh">kottesh</option>
-    <option value="surya">surya</option>
-    <option value="mazz">mazz</option>
-    <option value="arun">arun</option>
-  </select>
-  <input type="submit">
-</form>
-<h1>Visible Option Values</h1>
-
-<p>Use the size attribute to specify the number of visible values.</p>
-
-<form action="/action_page.php">
-  <label for="cars">Choose a car:</label>
-  <select id="cars" name="cars" size="4">
-    <option value="kottesh">kottesh</option>
-    <option value="sakthi">sakthi</option>
-    <option value="ram">ram</option>
-    <option value="sham">sham</option>
-  </select><br><br>
-  <input type="submit">
-</form>
-
-<h1>Textarea</1>
-<p>The textarea element defines a multi-line input field.</p>
-
-<form action="/action_page.php">
-  <textarea name="message" rows="30" cols="50">The cat was playing in the garden.</textarea>
-  <br><br>
-  <input type="submit">
-</form>
-
-<h1>The button Element</h1>
-
-<button type="button" onclick="alert('Hello World!')">Click Me!</button>
-
-<h1>Grouping Form Data with Fieldset</h1>
-
-<p>The fieldset element is used to group related data in a form, and the legend element defines a caption for the fieldset element.</p>
-
-<form action="/action_page.php">
-  <fieldset>
-    <legend>Personalia:</legend>
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname" value="KOTTESH"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname" value="SURYA"><br><br>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> I have a bike</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> I have a car</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> I have a boat</label><br><br>
     <input type="submit" value="Submit">
-  </fieldset>
-</form>
-<h1>The datalist Element</h1>
 
-<p>The datalist element specifies a list of pre-defined options for an input element.</p>
+    <h1>text input</h1>
+
+
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" value="kottesh"><br><br>
+    <label for="fname">second name:</label><br>
+    <input type="text" id="fname" value="surya"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+  <p>Notice that the value of the "First name" field will not be submitted, because the input element does not have a
+    name attribute.</p>
+  <h1>The select Element</h1>
+
+  <p>The select element defines a drop-down list:</p>
+
+  <form action="/action_page.php">
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars">
+      <option value="kottesh">kottesh</option>
+      <option value="surya">surya</option>
+      <option value="mazz">mazz</option>
+      <option value="arun">arun</option>
+    </select>
+    <input type="submit">
+  </form>
+  <h1>Visible Option Values</h1>
+
+  <p>Use the size attribute to specify the number of visible values.</p>
+
+  <form action="/action_page.php">
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars" size="4">
+      <option value="kottesh">kottesh</option>
+      <option value="sakthi">sakthi</option>
+      <option value="ram">ram</option>
+      <option value="sham">sham</option>
+    </select><br><br>
+    <input type="submit">
+  </form>
+
+  <h1>Textarea</1>
+    <p>The textarea element defines a multi-line input field.</p>
+
+    <form action="/action_page.php">
+      <textarea name="message" rows="30" cols="50">The cat was playing in the garden.</textarea>
+      <br><br>
+      <input type="submit">
+    </form>
+
+    <h1>The button Element</h1>
+
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+    <h1>Grouping Form Data with Fieldset</h1>
+
+    <p>The fieldset element is used to group related data in a form, and the legend element defines a caption for the
+      fieldset element.</p>
+
+    <form action="/action_page.php">
+      <fieldset>
+        <legend>Personalia:</legend>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="KOTTESH"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="SURYA"><br><br>
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+    <h1>The datalist Element</h1>
+
+    <p>The datalist element specifies a list of pre-defined options for an input element.</p>
+
+    <form action="/action_page.php">
+      <input list="browsers" name="browser">
+      <datalist id="browsers">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+      </datalist>
+      <input type="submit">
+    </form>
 
-<form action="/action_page.php">
-  <input list="browsers" name="browser">
-  <datalist id="browsers">
-    <option value="Internet Explorer">
-    <option value="Firefox">
-    <option value="Chrome">
-    <option value="Opera">
-    <option value="Safari">
-  </datalist>
-  <input type="submit">
-</form>
 
 
+    <h1>Text field</h1>
+    <p>The <strong>input type="text"</strong> defines a one-line text input field:</p>
 
-<h1>Text field</h1>
-<p>The <strong>input type="text"</strong> defines a one-line text input field:</p>
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname"><br><br>
+      <input type="submit" value="Submit">
+    </form>
 
-<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname"><br><br>
-  <input type="submit" value="Submit">
-</form>
+    <h1>Password field</h1>
 
-<h1>Password field</h1>
+    <p>The <strong>input type="password"</strong> defines a password field:</p>
 
-<p>The <strong>input type="password"</strong> defines a password field:</p>
+    <form action="/action_page.php">
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username"><br>
+      <label for="pwd">Password:</label><br>
+      <input type="password" id="pwd" name="pwd"><br><br>
+      <input type="submit" value="Submit">
+    </form>
 
-<form action="/action_page.php">
-  <label for="username">Username:</label><br>
-  <input type="text" id="username" name="username"><br>
-  <label for="pwd">Password:</label><br>
-  <input type="password" id="pwd" name="pwd"><br><br>
-  <input type="submit" value="Submit">
-</form>
+    <h1>Allow Multiple Selections</h1>
 
-<h1>Allow Multiple Selections</h1>
+    <p>Use the multiple attribute to allow the user to select more than one value.</p>
 
-<p>Use the multiple attribute to allow the user to select more than one value.</p>
+    <form action="/action_page.php">
+      <label for="cars">Choose a car:</label>
+      <select id="cars" name="cars" size="4" multiple>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select><br><br>
+      <input type="submit">
+    </form>
 
-<form action="/action_page.php">
-  <label for="cars">Choose a car:</label>
-  <select id="cars" name="cars" size="4" multiple>
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="fiat">Fiat</option>
-    <option value="audi">Audi</option>
-  </select><br><br>
-  <input type="submit">
-</form>
 
+    <h1>Reset Button</h1>
 
-<h1>Reset Button</h1>
+    <p>The <strong>input type="reset"</strong> defines a reset button that resets all form values to their default
+      values:</p>
 
-<p>The <strong>input type="reset"</strong> defines a reset button that resets all form values to their default values:</p>
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="John"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Doe"><br><br>
+      <input type="submit" value="Submit">
+      <input type="reset">
+    </form>
 
-<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
-  <input type="reset">
-</form> 
 
+    <h1>Local Date Field</h1>
 
-<h1>Local Date Field</h1>
+    <p>The <strong>input type="datetime-local"</strong> specifies a date and time input field, with no time zone.</p>
 
-<p>The <strong>input type="datetime-local"</strong> specifies a date and time input field, with no time zone.</p>
+    <form action="/action_page.php">
+      <label for="birthdaytime">Birthday (date and time):</label>
+      <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+      <input type="submit" value="Submit">
+    </form>
 
-<form action="/action_page.php">
-  <label for="birthdaytime">Birthday (date and time):</label>
-  <input type="datetime-local" id="birthdaytime" name="birthdaytime">
-  <input type="submit" value="Submit">
-</form>
 
+    <h1>Email Field</h1>
 
-<h1>Email Field</h1>
+    <p>The <strong>input type="email"</strong> is used for input fields that should contain an e-mail address:</p>
 
-<p>The <strong>input type="email"</strong> is used for input fields that should contain an e-mail address:</p>
+    <form action="/action_page.php">
+      <label for="email">Enter your email:</label>
+      <input type="email" id="email" name="email">
+      <input type="submit" value="Submit">
+    </form>
 
-<form action="/action_page.php">
-  <label for="email">Enter your email:</label>
-  <input type="email" id="email" name="email">
-  <input type="submit" value="Submit">
-</form>
+    <h1>Display an Image as the Submit button</h1>
 
-<h1>Display an Image as the Submit button</h1>
+    <form action="/action_page.php">
+      <label for="fname">First name: </label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name: </label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <input type="image" src="images\submit_gif.gif" alt="Submit" width="48" height="48">
+    </form>
 
-<form action="/action_page.php">
-  <label for="fname">First name: </label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <label for="lname">Last name: </label>
-  <input type="text" id="lname" name="lname"><br><br>
-  <input type="image" src="images\submit_gif.gif" alt="Submit" width="48" height="48">
-</form>
 
+    <h1>File upload</h1>
 
-<h1>File upload</h1>
+    <p>Show a file-select field which allows a file to be chosen for upload:</p>
+    <form action="/action_page.php">
+      <label for="myfile">Select a file:</label>
+      <input type="file" id="myfile" name="myfile"><br><br>
+      <input type="submit" value="Submit">
+    </form>
 
-<p>Show a file-select field which allows a file to be chosen for upload:</p>
-<form action="/action_page.php">
-  <label for="myfile">Select a file:</label>
-  <input type="file" id="myfile" name="myfile"><br><br>
-  <input type="submit" value="Submit">
-</form>
 
+    <h1>Number Field</h1>
 
-<h1>Number Field</h1>
+    <p>The <strong>input type="number"</strong> defines a numeric input field.</p>
 
-<p>The <strong>input type="number"</strong> defines a numeric input field.</p>
+    <p>You can use the min and max attributes to add numeric restrictions in the input field:</p>
 
-<p>You can use the min and max attributes to add numeric restrictions in the input field:</p>
+    <form action="/action_page.php">
+      <label for="quantity">Quantity (between 1 and 6):</label>
+      <input type="number" id="quantity" name="quantity" min="1" max="6">
+      <input type="submit" value="Submit">
+    </form>
 
-<form action="/action_page.php">
-  <label for="quantity">Quantity (between 1 and 6):</label>
-  <input type="number" id="quantity" name="quantity" min="1" max="6">
-  <input type="submit" value="Submit">
-</form>
+    <h1>Numeric Steps</h1>
 
-<h1>Numeric Steps</h1>
+    <p>Depending on browser support: Fixed steps will apply in the input field.</p>
 
-<p>Depending on browser support: Fixed steps will apply in the input field.</p>
+    <form action="/action_page.php">
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30">
+      <input type="submit" value="Submit">
+    </form>
 
-<form action="/action_page.php">
-  <label for="quantity">Quantity:</label>
-  <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30">
-  <input type="submit" value="Submit">
-</form>
 
+    <h1>The input size attribute</h1>
 
-<h1>The input size attribute</h1>
+    <p>The size attribute specifies the width (in characters) of an input field:</p>
 
-<p>The size attribute specifies the width (in characters) of an input field:</p>
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" size="50"><br>
+      <label for="pin">PIN:</label><br>
+      <input type="text" id="pin" name="pin" size="50"><br><br>
+      <input type="submit" value="Submit">
+    </form>
 
-<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" size="50"><br>
-  <label for="pin">PIN:</label><br>
-  <input type="text" id="pin" name="pin" size="50"><br><br>
-  <input type="submit" value="Submit">
-</form>
 
-  
-<h1>The input min and max attributes</h1>
+    <h1>The input min and max attributes</h1>
 
-<p>The min and max attributes specify the minimum and maximum values for an input element.</p>
+    <p>The min and max attributes specify the minimum and maximum values for an input element.</p>
 
-<form action="/action_page.php">
-  <label for="datemax">Enter a date before 1980-01-01:</label>
-  <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+    <form action="/action_page.php">
+      <label for="datemax">Enter a date before 1980-01-01:</label>
+      <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
 
-  <label for="datemin">Enter a date after 2000-01-01:</label>
-  <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
-  
-  <label for="quantity">Quantity (between 1 and 5):</label>
-  <input type="number" id="quantity" name="quantity" min="1" max="5"><br><br>
+      <label for="datemin">Enter a date after 2000-01-01:</label>
+      <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
 
-  <input type="submit" value="Submit">
-</form>
+      <label for="quantity">Quantity (between 1 and 5):</label>
+      <input type="number" id="quantity" name="quantity" min="1" max="5"><br><br>
 
+      <input type="submit" value="Submit">
+    </form>
 
-<h1>The input step attribute</h1>
 
-<p>The step attribute specifies the legal number intervals for an input element.</p>
+    <h1>The input step attribute</h1>
 
-<form action="/action_page.php">
-  <label for="points">Points:</label>
-  <input type="number" id="points" name="points" step="10">
-  <input type="submit" value="Submit">
-</form>
+    <p>The step attribute specifies the legal number intervals for an input element.</p>
 
+    <form action="/action_page.php">
+      <label for="points">Points:</label>
+      <input type="number" id="points" name="points" step="10">
+      <input type="submit" value="Submit">
+    </form>
 
-<h1>The input formaction attribute</h1>
 
-<p>The formaction attribute specifies the URL of a file that will process the input when the form is submitted.</p>
+    <h1>The input formaction attribute</h1>
 
-<form action="/action_page.php">
-  <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname"><br><br>
-  <input type="submit" value="Submit">
-  <input type="submit" formaction="/action_page2.php" value="Submit as Admin">
-</form>
+    <p>The formaction attribute specifies the URL of a file that will process the input when the form is submitted.</p>
 
+    <form action="/action_page.php">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <input type="submit" value="Submit">
+      <input type="submit" formaction="/action_page2.php" value="Submit as Admin">
+    </form>
 
-<h1>The input formmethod Attribute</h1>
 
-<p>The formmethod attribute defines the HTTP method for sending form-data to the action URL.</p>
+    <h1>The input formmethod Attribute</h1>
 
-<form action="/action_page.php" method="get" target="_blank">
-  <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname"><br><br>
-  <input type="submit" value="Submit using GET">
-  <input type="submit" formmethod="post" value="Submit using POST">
-</form>
+    <p>The formmethod attribute defines the HTTP method for sending form-data to the action URL.</p>
 
+    <form action="/action_page.php" method="get" target="_blank">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <input type="submit" value="Submit using GET">
+      <input type="submit" formmethod="post" value="Submit using POST">
+    </form>
 
 
-<h1>The input formtarget attribute</h1>
 
-<p>The formtarget attribute specifies a name or a keyword that indicates where to display the response that is received after submitting the form.</p>
+    <h1>The input formtarget attribute</h1>
 
-<form action="/action_page.php">
-  <label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname"><br><br>
-  <input type="submit" value="Submit">
-  <input type="submit" formtarget="_blank" value="Submit to a new window/tab">
-</form>
+    <p>The formtarget attribute specifies a name or a keyword that indicates where to display the response that is
+      received after submitting the form.</p>
 
-        </form> 
-        
-        </body>
-        </html>
-        
-        
-    
+    <form action="/action_page.php">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <input type="submit" value="Submit">
+      <input type="submit" formtarget="_blank" value="Submit to a new window/tab">
+    </form>
+
+    </form>
+
+</body>
+
+</html>

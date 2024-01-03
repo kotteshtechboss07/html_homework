@@ -162,20 +162,26 @@
 
 
 
-let LCU = ["kaithi","vikram","leo"]
+// let LCU = ["kaithi", "vikram", "leo"]
 
-let movie1="kaithi"
-let movie2="vikram"
-let movie3="leo"
-let movie4="rrr"
+// let movie1 = "kaithi"
+// let movie2 = "vikram"
+// let movie3 = "leo"
+// let movie4 = "rrr"
 
-const movie_name=prompt("enter the movie name")
+// const movie_name = prompt("enter the movie name")
 
-if (LCU.includes(movie_name)) {
-    console.log(movie_name,"is in the LCU.");
-  } else {
-    console.log(movie_name,"is not in the LCU.");
-  }
+// if (LCU.includes(movie_name)) {
+//   console.log(movie_name, "is in the LCU.");
+// } else {
+//   console.log(movie_name, "is not in the LCU.");
+// }
+// a=(""||1+2||4/2)
+// console.log(""|| 1+2||4/2);
 
 
-
+let x = myFunction(4, 3);
+document.getElementById("demo").innerHTML = x;
+function myFunction(a, b) {
+  return a + b;
+}

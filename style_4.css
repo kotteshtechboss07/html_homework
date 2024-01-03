@@ -178,24 +178,11 @@ ul li a:hover{
 
 }
 
-.form h2{
-    width: 220px;
-    font-family: sans-serif;
-    text-align: center;
-    color: #ff7200;
-    font-size: 22px;
-    background-color: #fff;
-    border-radius: 10px;
-    margin: 2px;
-    padding: 8px;
-
-
-}
 .form input{
     width: 240px;
     height: 35px;
-    background: transparent;
-    border-bottom: 1px solid #ff7200;
+    background:blueviolet;
+    border-bottom: 2px solid #ff7200;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -209,7 +196,7 @@ ul li a:hover{
     
 }
 .for input:focus{
-    outline: none;
+    outline:auto ;
 
 }
 ::placeholder{
@@ -226,8 +213,8 @@ ul li a:hover{
     margin-top: 30px;
     font-size: 18px;
     border-radius: 10px;
-    cursor: pointer;
-    color: #fff;
+    cursor:pointer;
+    color:red;
 
 
 
@@ -275,6 +262,6 @@ ul li a:hover{
 
 }
 .icons ion-icon:hover{
-    color: #ff7200;
+    color:#ff7200;
 
 }
