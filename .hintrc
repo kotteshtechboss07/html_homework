@@ -14,7 +14,8 @@
       "default",
       {
         "button-name": "off",
-        "link-name": "off"
+        "link-name": "off",
+        "input-button-name": "off"
       }
     ],
     "button-type": "off",
@@ -22,7 +23,8 @@
       "default",
       {
         "image-alt": "off",
-        "document-title": "off"
+        "document-title": "off",
+        "area-alt": "off"
       }
     ],
     "compat-api/css": [
@@ -50,6 +52,13 @@
     ],
     "meta-viewport": "off",
     "highest-available-document-mode": "off",
-    "meta-charset-utf-8": "off"
+    "meta-charset-utf-8": "off",
+    "axe/parsing": [
+      "default",
+      {
+        "duplicate-id-active": "off"
+      }
+    ],
+    "detect-css-reflows/composite": "off"
   }
 }

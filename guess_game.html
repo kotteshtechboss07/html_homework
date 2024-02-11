@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Number Guessing Game</title>
+    
+ 
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            width: 50%;
+            max-width: 800px;
+            min-width: 480px;
+            margin: 0 auto;
+            background-image: url(https://static.skillshare.com/uploads/video/thumbnails/2d92549ec967df172f7e8c92fbe6669d/original);
+            background-size: cover;
+                  }
+    </style>
+</head>
+<body>
+ <img id="images\images (1).jpg">
+    <h1>Guess The Number</h1>
+    <p>
+        We have selected a random number 
+        between 1 - 20. See if you can
+        guess it.
+    </p>
+    <div class="form">
+        <!-- <label for="guessField">
+            Enter a guess: 
+      </label> -->
+        <input type="text" id="guessField"class="guessField"  placeholder="enter your number" required>
+        <input type="submit" value="Submit"
+            class="guess" id="submit" >
+
+                </div>
+    </div>
+     <script type="text/javascript">
+         // Generate a Random Number
+        let y = Math.floor(Math.random() * 20 + 1);
+        // Counting the number of guesses
+        // made for correct Guess
+        let guess = 1;
+        document.getElementById("submit").onclick = function () {
+            // Number guessed by user    
+            let x = document.getElementById("guessField").value;
+            if (x == y) {
+                alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN "
+                    + guess + " GUESS ");
+            }
+            /* If guessed number is greater than actual number*/
+            else if (x > y) {
+                guess++;
+                alert("TRY A SMALLER NUMBER");
+            }
+            else {
+                guess++;
+                alert("TRY A GREATER NUMBER")
+            }
+        }
+    </script>
+</body>
+</html>

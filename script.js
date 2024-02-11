@@ -1,187 +1,74 @@
+'use strict';
+let secretNumber = Math.trunc(Math.random() * 20) + 1;
+let score = 20;   
+let highscore = 0;
 
-// let js = "amazing";
-// console.log(40+8+23-10);
+const displayMessage = function (message) {
+  document.querySelector('.message').textContent = message;
+};
+// this is a check the guess
+document.querySelector('.check').addEventListener('click', function () {
+  const guess = Number(document.querySelector('.guess').value);
+  console.log(guess, typeof guess);
 
-// console.log ("kottesh");
-// console.log("23");
+  // When there is no input
+  if (!guess) {
+    displayMessage('⛔️ No number!');
 
-// let firstname="maaz";
+    // When player wins is correct go to the loops in script
+  } else if (guess === secretNumber) {
+    displayMessage('🎉 Correct Number!');
+    document.querySelector('.number').textContent = secretNumber;
+// this is a correct the guessing number background is green
+      // document.querySelector('.check').style.display = 'none';
 
-// console.log(firstname);
-// console.log(firstname);
-// console.log(firstname);
+    document.querySelector('body').style.backgroundColor = '#60b347';
+    document.querySelector('.number').style.width = '30rem';
 
-// let maaz="m";
-// let sfunction=27;
+    if (score > highscore) {
+       highscore = score;
+      document.querySelector('.highscore').textContent = highscore;
+    }
 
-// let person = "maaz"
-// let pi = 3.1415;
+    // When guess is wrong using the loops in script
+  } else if (guess !== secretNumber) {
+    if (score > 1) {
+      displayMessage(guess > secretNumber ? '📈 Too high!' : '📉 Too low!');
+      score--;
+      document.querySelector('.score').textContent = score;
+      //this guessing is false
 
-// let myfirstjob = "programmer"
-// let mycurrentjob = "teacher"
+    } else {
+      displayMessage('💥 You lost the game!');
+      document.querySelector('.score').textContent = 0;
+      document.querySelector('.number').textContent = secretNumber;
+        //  document.querySelector('.check').style.display = 'none';
 
-// console.log(myfirstjob);
-// function square(y){
-//      let x=5
-//     let n=(x**y) 
-//     return n 
+      //this is a correct the guessing number background is red.
+    document.querySelector('body').style.backgroundColor = 'red';
+    document.querySelector('.number').style.width = '30rem';
+    }
+  }
+});
 
-// }
-// // console.log(square(3))
-// 12/10/2023
-//  let children;
-// console.log(children)
-// true;
-// console.log(true);
+// this is a put the again button
+document.querySelector('.again').addEventListener('click', function () {
+  let score = 20
+  let randomNumber = Math.trunc(Math.random() * 20) +1;
+  document.querySelector(".message").textContent = "Start guessing...";
+  document.querySelector(".score").textContent = score;
+  document.querySelector('body').style.backgroundColor = '#222';
+  document.querySelector('.number').textContent = '?';
+  document.querySelector('.guess').value = "";
+  document.querySelector('.number').style.width = '15rem';
+  document.querySelector('.number').style.display = 'block'; 
 
-
-
-
-
-// let javaScriptIsFun = true;
-// console.log(javaScriptIsFun)
-// // console.log(typeof true)
-// console.log(typeof javaScriptIsFun)
-// console.log(typeof 23) 
-// console.log(typeof "kottesh")
-
-
-// let JavaScriptIsFun;
-// console.log(javaScriptIsFun)
-
-// javaScriptIsFun="yes";
-// console.log(javaScriptIsFun)
-
-// let year;
-// console.log(year);
-// console.log(typeof year);
-
-// year=1996;
-// console.log(typeof year);
-
-// console.log(typeof null);
-// let age=number;
-// let age=30;
-// age=31;
-
-// const birthyear=1991;
-// birthyear=1998
-
-// const job;
-// a = 5;
-// b = 10;
-// c = a + b; 
-// b = a; 
-// d = a + b;
-// console.log(c)
-// console.log(d)
-// console.log(b)
-
-// x=5;
-// y=1000;
-// z=x+y;
-// console.log(z);
-// //this is a multiplying the two numbers
-// z= x*y;
-// console.log(z)
-// //this is a square the two numbers
-// z= x**y;
-// console.log(z)
-// // this is a division operator
-// z= x/y;
-// console.log(z)
-// // this is a modulas operator
-// z= x%y;
-// console.log(z)
-// // this is a addition operator two numbers add
-// z= x+y;
-// console.log(z)
-// //this is a subraction operator two numbers subraction
-// z= x-y;
-// console.log(z)
-// // this is a special operator addition 
-// x=40;
-// console.log(x)
-// x+=1;
-// console.log(x)/*
-// this is a special subraction operator
-// x=30
-// console.log(x)
-// x-=1;
-// console.log(x)
-
-// // this is a comparision operator
-
-// a=3;
-// b=4;
-
-// a==b;
-// console.log(a==b);
-// console.log(a===b);
-// console.log(a>b);
-// console.log(a<b);
-// console.log(a>=b);
-// console.log(a<=b);
-// console.log(a!=b);
-// console.log(a!==b);
-
-// const now = 2037;
-// const ageJonas = now - 1991;
-// const agesarah = now - 2018;
-// console.log(now-1991 > now - 2018);
-
-// let x,y;
-// x = y = 25 - 10 - 5;
-// console.log(x,y);
-// const averageAge = (ageJonas+agesarah)/2
-// console.log(ageJonas, agesarah, averageAge);
-
-
-// const massMark = 78;
-// const heightMark = 1.69;
-// const massJohn = 92;
-// const heightJohn = 1.95;
-
-// const BMIMark = massMark / heightMark ** 2;
-// const BMIJohn = massJohn / (heightJohn * heightJohn)
-// const markHigherBMI = BMIMark > BMIJohn;
-// console.log(BMIMark, BMIJohn, markHigherBMI);
-
-
-
-// const firstName = 'kottesh';
-// const job = 'student';
-// const birthYear = 2005;
-// const year = 2023;
-
-// const kottesh = "i'm " + firstName + ', a ' + (year - birthYear) + ' yearsold '
-//     + job + '!';
-// console.log(kottesh)
-// console.log("i am a " + job, "my age is " + (year - birthYear))
+ });
 
 
 
 
-// let LCU = ["kaithi", "vikram", "leo"]
-
-// let movie1 = "kaithi"
-// let movie2 = "vikram"
-// let movie3 = "leo"
-// let movie4 = "rrr"
-
-// const movie_name = prompt("enter the movie name")
-
-// if (LCU.includes(movie_name)) {
-//   console.log(movie_name, "is in the LCU.");
-// } else {
-//   console.log(movie_name, "is not in the LCU.");
-// }
-// a=(""||1+2||4/2)
-// console.log(""|| 1+2||4/2);
 
 
-let x = myFunction(4, 3);
-document.getElementById("demo").innerHTML = x;
-function myFunction(a, b) {
-  return a + b;
-}
+
+

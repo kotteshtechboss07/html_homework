@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="age_calculator2.css">
+</head>
+<body>
+    <div class="container"></div>
+    <form>
+<div class="base">
+<h4> Age Calculator</h4>
+</div>
+<div  class="block">
+    <p class="title">date</p>
+    <input type="text" name = "date" id= "date" placeholder="dd" minlength="1" maxlength="2" required>
+    </div>
+    <div  class="block">
+        <p class="title">month</p>
+        <input type="text" name = "month" id= "month" placeholder="mm" minlength="4" maxlength="4" required>
+        </div>
+        <div  class="block">
+            <p class="title">date</p>
+            <input type="text" name = "year" id= "year" placeholder="yyyy" minlength="4" maxlength="4" required>
+            </div>
+        <div class="base">
+            <input type="button" name="submit" value="submit" onclick="age()"/>
+        </div>
+        <div class="age"></div>
+        <script type="text/javascript">
+            function age(){
+              var d1= document.getElementById('date').value;
+              var m1 = document.getElementById('month').value;
+              var y1 = document.getElementById('year').value;
+              var date = new date();
+              var d2 = date.getDate();
+              var m2 = 1+ 
+            }
+            
+        </script>
+
+
+</form>
+</body>
+</html>
