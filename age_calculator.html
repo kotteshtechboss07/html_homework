@@ -6,26 +6,20 @@
     <title>Age Calculator</title>
 </head>
 <body>
-
     <h1>Age Calculator</h1>
-
     <label for="birthdate">Enter your birthdate:</label>
     <input type="date" id="birthdate">
     <button onclick="calculateAge()">Calculate Age</button>
-
     <p id="result"></p>
     <script>
 // Function to calculate age
 function calculateAge() {
     // Get the birthdate value from the user
     var birthdate = new Date(document.getElementById('birthdate').value);
-
     // Get the current date
     var currentDate = new Date();
-
     // Calculate the age
     var age = currentDate.getFullYear() - birthdate.getFullYear();
-
     // Check if the birthday has already occurred this year
     if (currentDate.getMonth() < birthdate.getMonth() || (currentDate.getMonth() === birthdate.getMonth() && currentDate.getDate() < birthdate.getDate())) {
         age--;
@@ -33,6 +27,5 @@ function calculateAge() {
     document.getElementById('result').innerText = 'Your age is: ' + age + ' years';
 }
 </script>
-
 </body>
 </html>

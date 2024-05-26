@@ -102,9 +102,6 @@ div:hover {
   background-color: blue;
 }
 
-
-
-
 p {
   display: none;
   background-color: yellow;
@@ -131,8 +128,7 @@ img:hover {
 
 
 
-
-span.{
+span.a{
 display: inline; /* the default for span */
 width: 100px;
 height: 100px;
@@ -170,14 +166,6 @@ img{
   margin-left: auto;
   margin-right: auto;
 }
-
-
-
-
-
-
-
-
 ul {
   list-style-type: none;
   margin: 0;

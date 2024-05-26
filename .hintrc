@@ -32,7 +32,8 @@
       {
         "ignore": [
           "user-select",
-          "text-decoration-thickness"
+          "text-decoration-thickness",
+          "-webkit-tap-highlight-color"
         ]
       }
     ],
@@ -56,9 +57,18 @@
     "axe/parsing": [
       "default",
       {
-        "duplicate-id-active": "off"
+        "duplicate-id-active": "off",
+        "marquee": "off"
       }
     ],
-    "detect-css-reflows/composite": "off"
+    "detect-css-reflows/composite": "off",
+    "axe/structure": [
+      "default",
+      {
+        "list": "off",
+        "listitem": "off",
+        "definition-list": "off"
+      }
+    ]
   }
 }
