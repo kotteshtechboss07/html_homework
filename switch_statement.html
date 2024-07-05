@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Who's in Charge?</title>
+</head>
+<body>
+  <p id="demo"></p>
+  <script>
+    // Get the current month
+    let month = new Date().toLocaleString('en-us', { month: 'long' });
+
+    let inChargeText; 
+    switch (month.toLowerCase()) {
+      case "january":
+        inChargeText = 'Sham';  
+        break;
+      case "february":
+        inChargeText = 'Servin';
+        break;
+      case "march":
+        inChargeText = 'Gokul';
+        break;
+      case "april":
+        inChargeText = 'Shiva Kumar';
+        break;
+      case "may":
+        inChargeText = 'Maaz';
+        break;
+      case "june":
+        inChargeText = 'Arun';
+        break;
+      case "july":
+        inChargeText = 'Ram';
+        break;
+      case "august":
+        inChargeText = 'Mani';
+        break;
+      case "september":
+        inChargeText = 'Raghul';
+        break;
+      case "october":
+        inChargeText = 'Sakthi';
+        break;
+      case "november":
+        inChargeText = 'Surya';
+        break;
+      case "december":
+        inChargeText = 'Kottesh';  
+        break;
+      default:
+        inChargeText = 'Someone else'; 
+    }
+    document.getElementById("demo").innerHTML = `<b>${inChargeText} is in charge this month.</b>`;  
+  </script>
+</body>
+</html>
