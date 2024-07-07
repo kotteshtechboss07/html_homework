@@ -1,89 +1,26 @@
+h1 {
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-style: double;
+}
+fieldset {
+  width: 50%;
+}
+body {
+  font-family: inherit;
+  background-image: url("https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2655.jpg?w=2000");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: xx-large;
+  text-align: center;
+}
 
-   
-    p.dotted {border-style: dotted;}
-    p.dashed {border-style: dashed;}
-    p.solid {border-style: solid;}
-    p.double {border-style: double;}
-    p.groove {border-style: groove;}
-    p.ridge {border-style: ridge;}
-    p.inset {border-style: inset;}
-    p.outset {border-style: outset;}
-    p.none {border-style: none;}
-    p.hidden {border-style: hidden;}
-    p.mix {border-style: dotted dashed solid double;}
-
-
-    p.one{
-          border-style: dotted;
-          border-color:  red blue green yellow;
-         }
-    p.two{
-          border-style: dashed;
-          border-color: green;
-         }
-    p.three{
-          border-style:double;
-          border-color:aquamarine;
-           } 
-    p.four{
-        border-style:groove ;
-        border-color:blueviolet;
-          }           
-    p.five{
-        border-style:ridge ;
-        border-color:brown;
-          }
-    p.six{
-        border-style:inset ;
-        border-color:chartreuse;
-         }
-    p.seven{
-        border-style:outset ;
-        border-color:crimson;
-           }
-    p.eight{
-        border-style:none ;
-        border-color:darkmagenta;
-           }
-    p.nine{
-        border-style:solid ;
-        border-color:lawngreen;
-          }
-    p.ten{
-        border-style:hidden ;
-        border-color:oldlace;
-         }
-    p.eleven{
-        border-style:dotted dashed solid double ;
-        border-color:yellow;
-            }
-
-     h1{
-        text-decoration: underline;
-        text-decoration-color: red;  
-        text-decoration-style: double;
-       
-        
-     
-     } 
-     fieldset{
-        width: 50%;
-     }
-     body{
-        font-family:inherit; 
-        background-image: url("https://img.freepik.com/free-photo/vivid-blurred-colorful-background_58702-2655.jpg?w=2000");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        font-size: xx-large ;
-        text-align: left;
-    }
-    
-    h1 {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 40px;
-    color:red;
-    background-color: blue;
-      }
-        
-    
-      
+h1 {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  color: red;
+  background-color:lawngreen;
+}
+fieldset{
+    align-items: center;
+}
